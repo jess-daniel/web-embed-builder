@@ -2,37 +2,10 @@
 <html lang="en">
   <%- include("../partials/head") %>
   <body>
-    <header><%- include("../partials/header") %></header>
+    <%- include("../partials/header") %>
 
     <div id="gjs"></div>
 
-    <script type="text/javascript">
-      var editor = grapesjs.init({
-        container: "#gjs",
-        plugins: ["gjs-preset-webpage"],
-        pluginsOpts: {
-          "gjs-preset-webpage": {
-            // options
-          },
-        },
-      });
-    </script>
-
-    <!-- <h1>Testing...</h1>
-    <p class="home-text">This is home</p>
-
-    <form action="" method="post">
-      <label for="ytembed"> YouTube Embed </label>
-      <textarea
-        name="ytembed"
-        id="ytembed"
-        placeholder="YouTube Embed"
-      ></textarea>
-      <button type="submit">Submit</button>
-    </form> -->
-
-    <!-- <div id="gjs">
-      <h1>Hello World Component!</h1>
-    </div> -->
+    <%- include("../partials/footer") %>
   </body>
 </html>
